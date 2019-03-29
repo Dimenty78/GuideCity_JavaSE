@@ -34,22 +34,10 @@ public class Main {
             //Выводем в консоль список Имен объектов принадлежащих выбранной Категории и получаем из консоли номер выбранного пункта.
             nnn = new Consol().consolSelect(listPoiSelectName);
 
-            //Выводем в консоль Характеристики выбранного объекта.
-            System.out.println("\n" + "\n" + "-----------------------------------------------------------------");
-            System.out.println("Название: " + listPoiSelect.get(nnn).getName());
-            System.out.println("Рейтинг: " + listPoiSelect.get(nnn).getRating());
-            System.out.println("Адрес: " + listPoiSelect.get(nnn).getAdres());
-            System.out.println("Телефон: " + listPoiSelect.get(nnn).getTelefon());
-            System.out.println("Время работы: c " + listPoiSelect.get(nnn).getWorktim().replace("_", " по "));
-            System.out.println("Описание: " + listPoiSelect.get(nnn).getDescription() + "\n");
-            System.out.println("Отзывы: ");
+            //Вывод на консоль результата
+            CityPoint cityPoint = new CityPoint();
+            cityPoint.resultConsol(listPoiSelect,nnn);
 
-            String bdMass[] = listPoiSelect.get(nnn).getResponses().split("::::");
-
-            for (int t = 0; t < bdMass.length; t++) {
-                System.out.println(bdMass[t]);
-            }
-            System.out.println("-----------------------------------------------------------------");
 
 
             //____________________________________________________________________Если номер выбранного пункта равен поисковому
@@ -97,28 +85,14 @@ public class Main {
                 //Выводем в консоль список Имен объектов принадлежащих выбранной Категории и получаем из консоли номер выбранного пункта.
                 nnn = new Consol().consolSelect(listPoiSelectName);
 
-                //Выводем в консоль Характеристики выбранного объекта.
-                System.out.println("\n" + "\n" + "-----------------------------------------------------------------");
-                System.out.println("Название: " + listPoiSelect.get(nnn).getName());
-                System.out.println("Рейтинг: " + listPoiSelect.get(nnn).getRating());
-                System.out.println("Адрес: " + listPoiSelect.get(nnn).getAdres());
-                System.out.println("Телефон: " + listPoiSelect.get(nnn).getTelefon());
-                System.out.println("Время работы: c " + listPoiSelect.get(nnn).getWorktim().replace("_", " по "));
-                System.out.println("Описание: " + listPoiSelect.get(nnn).getDescription() + "\n");
-                System.out.println("Отзывы: ");
-
-                String bdMass[] = listPoiSelect.get(nnn).getResponses().split("::::");
-
-                for (int t = 0; t < bdMass.length; t++) {
-                    System.out.println(bdMass[t]);
-                }
-                System.out.println("-----------------------------------------------------------------");
+                //Вывод на консоль результата
+                CityPoint cityPoint = new CityPoint();
+                cityPoint.resultConsol(listPoiSelect,nnn);
 
             } else {
                 System.out.println("\n" + "Поиск не дал результатов");
             }
         }
-
 
     }else   {
             System.out.println("\n" + "\n" + "\n" + "!!!!!!!!!!! ФАЙЛ БД НЕ НАЙДЕН !!!!!!!!!!! ");
