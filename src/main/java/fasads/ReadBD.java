@@ -14,26 +14,39 @@ public class ReadBD {
         listsPoi.clear();
 
         String bdText = new FileRecRead().ReadFile("BD_text.bd");
-        String bdMass[] = bdText.split("\n");
 
-        for (int t = 1; t < bdMass.length; t++) {
-            listsPoi.add(new CityPoint(t, bdMass[t].split(";;;;")[0], bdMass[t].split(";;;;")[1], bdMass[t].split(";;;;")[2], Integer.parseInt(bdMass[t].split(";;;;")[3]), bdMass[t].split(";;;;")[4], bdMass[t].split(";;;;")[5], bdMass[t].split(";;;;")[6], bdMass[t].split(";;;;")[7], bdMass[t].split(";;;;")[8]));
-        }
+
+
+        if (bdText !=null) {
+            String bdMass[] = bdText.split("\n");
+
+            for (int t = 1; t < bdMass.length; t++) {
+                listsPoi.add(new CityPoint(t, bdMass[t].split(";;;;")[0], bdMass[t].split(";;;;")[1], bdMass[t].split(";;;;")[2], Integer.parseInt(bdMass[t].split(";;;;")[3]), bdMass[t].split(";;;;")[4], bdMass[t].split(";;;;")[5], bdMass[t].split(";;;;")[6], bdMass[t].split(";;;;")[7], bdMass[t].split(";;;;")[8]));
+            }
             return listsPoi;
+        }else {
+            return null;
         }
+    }
 
     //Создаем список Категорий с добавлением позиции ПОИСК
     private static ArrayList<String> listCategorySearch() {
         listCategory.clear();
         listsPoi = rearToArray();
-        for (int t = 0; t < listsPoi.size(); t++) { ;
-            if (listCategory.contains(listsPoi.get(t).getCategory())) {
-            } else {
-                listCategory.add(listsPoi.get(t).getCategory());
+
+        if (listsPoi !=null) {
+            for (int t = 0; t < listsPoi.size(); t++) {
+                ;
+                if (listCategory.contains(listsPoi.get(t).getCategory())) {
+                } else {
+                    listCategory.add(listsPoi.get(t).getCategory());
+                }
             }
+            listCategory.add(">>>ОБЩИЙ ПОИСК");
+            return listCategory;
+        }else {
+            return null;
         }
-        listCategory.add(">>>ОБЩИЙ ПОИСК");
-        return listCategory;
     }
 
     //Создаем список Категорий без добавления позиции ПОИСК
@@ -49,17 +62,17 @@ public class ReadBD {
     }
 
     public static ArrayList<CityPoint> getListsPoi() {
-        rearToArray();
+        ArrayList<CityPoint> listsPoi = rearToArray();
         return listsPoi;
     }
 
     public static ArrayList<String> getlistCategorySearch() {
-        listCategorySearch();
+        ArrayList<String> listCategory = listCategorySearch();
         return listCategory;
     }
 
     public static ArrayList<String> getlistCategory(ArrayList<CityPoint> listsPoi) {
-        listCategory(listsPoi);
+        ArrayList<String> listCategory = listCategory(listsPoi);
         return listCategory;
     }
 }

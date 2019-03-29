@@ -2,9 +2,7 @@ package fasads;
 
 public class CityPoint {
 
-        private int id;
         private String category;
-        private String favorites;
         private String name;
         private int rating;
         private String description;
@@ -15,10 +13,8 @@ public class CityPoint {
 
 
         public CityPoint(int id, String category, String favorites, String name, int rating, String description, String responses, String worktim, String telefon, String adres){
-            this.id = id;
             this.category = category;
             this.name = name;
-            this.favorites = favorites;
             this.rating = rating;
             this.description = description;
             this.responses = responses;

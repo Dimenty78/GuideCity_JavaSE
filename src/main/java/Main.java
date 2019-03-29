@@ -12,12 +12,18 @@ public class Main {
         ArrayList<CityPoint> listPoi = ReadBD.getListsPoi();
 
         //Читаем файл БД, ищем в нем Категории, добавляем пункт Поиск, выводим в консоль Категории и получаем из консоли номер выбранного пункта.
-        int nnn = new Consol().consolSelect(ReadBD.getlistCategorySearch());
 
+        ArrayList<String> catrgorySearch = ReadBD.getlistCategorySearch();
+
+
+
+        if (catrgorySearch != null){
+
+            int nnn = new Consol().consolSelect(catrgorySearch);
 
 
         //____________________________________________________________________Если номер выбранного пункта не равен поисковому
-        if (nnn != (ReadBD.getlistCategorySearch().size()-1)){
+        if (nnn != (ReadBD.getlistCategorySearch().size() - 1)) {
 
 
             //Выделяем из БД объектов выбранной Категории
@@ -25,7 +31,7 @@ public class Main {
             ArrayList<String> listPoiSelectName = new ArrayList<String>();
 
             for (int t = 0; t < listPoi.size(); t++) {
-                if (listPoi.get(t).getCategory().contains(ReadBD.getlistCategorySearch().get(nnn))){
+                if (listPoi.get(t).getCategory().contains(ReadBD.getlistCategorySearch().get(nnn))) {
 
                     listPoiSelect.add(listPoi.get(t));
                     listPoiSelectName.add(listPoi.get(t).getName());
@@ -55,12 +61,8 @@ public class Main {
             System.out.println("-----------------------------------------------------------------");
 
 
-
-
-
-
-        //____________________________________________________________________Если номер выбранного пункта равен поисковому
-        }else {
+            //____________________________________________________________________Если номер выбранного пункта равен поисковому
+        } else {
 
             //Вывод в консоль строки поискового запроса
             System.out.print("\n" + "ВВЕДИ СЛОВА ПОИСКА: ");
@@ -74,12 +76,12 @@ public class Main {
             //Поиск в объектах из БД текста содержащую поисковую строку
             for (int t = 0; t < listPoi.size(); t++) {
 
-                if(
-                    listPoi.get(t).getCategory().toLowerCase().contains(num) ||
-                    listPoi.get(t).getName().toLowerCase().contains(num) ||
-                    listPoi.get(t).getResponses().toLowerCase().contains(num) ||
-                    listPoi.get(t).getDescription().toLowerCase().contains(num)
-                ){
+                if (
+                        listPoi.get(t).getCategory().toLowerCase().contains(num) ||
+                                listPoi.get(t).getName().toLowerCase().contains(num) ||
+                                listPoi.get(t).getResponses().toLowerCase().contains(num) ||
+                                listPoi.get(t).getDescription().toLowerCase().contains(num)
+                ) {
 
                     listPoiSearch.add(listPoi.get(t));
                 }
@@ -94,7 +96,7 @@ public class Main {
                 ArrayList<String> listPoiSelectName = new ArrayList<String>();
 
                 for (int t = 0; t < listPoiSearch.size(); t++) {
-                    if (listPoiSearch.get(t).getCategory().toLowerCase().contains(ReadBD.getlistCategorySearch().get(nnn).toLowerCase())){
+                    if (listPoiSearch.get(t).getCategory().toLowerCase().contains(ReadBD.getlistCategorySearch().get(nnn).toLowerCase())) {
 
                         listPoiSelect.add(listPoiSearch.get(t));
                         listPoiSelectName.add(listPoiSearch.get(t).getName());
@@ -123,9 +125,14 @@ public class Main {
                 }
                 System.out.println("-----------------------------------------------------------------");
 
-            }else {
+            } else {
                 System.out.println("\n" + "Поиск не дал результатов");
             }
+        }
+
+
+    }else   {
+            System.out.println("\n" + "!!!!!!!!!!! ФАЙЛ БД НЕ НАЙДЕН");
         }
     }
 }
