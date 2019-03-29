@@ -7,7 +7,6 @@ public class ReadBD {
     private static ArrayList<CityPoint> listsPoi = new ArrayList<CityPoint>();
     private static ArrayList<String> listCategory = new ArrayList<String>();
 
-
     //Создаем список объектов из БД
     private static ArrayList<CityPoint> rearToArray() {
 

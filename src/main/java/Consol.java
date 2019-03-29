@@ -8,10 +8,9 @@ public class Consol {
 
     public int consolSelect (ArrayList<String> list)    {
 
-        ArrayList<String> ListCategory = list;
-        int categorySize = ListCategory.size();
-        for (int t = 0; t < ListCategory.size(); t++) {
-            System.out.println(t + " - " + ListCategory.get(t));
+        int categorySize = list.size();
+        for (int t = 0; t < list.size(); t++) {
+            System.out.println(t + " - " + list.get(t));
         }
         int w = 1;
         while (w>0){
@@ -28,7 +27,6 @@ public class Consol {
                 }else {
                     System.out.println("ВВЕДЕНО НЕКОРРЕКТНОЕ ЧИСЛО. ПОВТОРИТЕ");
                 }
-
             }else {
                 System.out.println("ВЫ ВВЕЛИ НЕ ЧИСЛО. ПОВТОРИТЕ");
             }

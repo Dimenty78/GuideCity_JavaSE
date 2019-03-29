@@ -19,8 +19,7 @@ public class Main {
 
         //____________________________________________________________________Если номер выбранного пункта не равен поисковому
         if (nnn != (ReadBD.getlistCategorySearch().size() - 1)) {
-
-
+            
             //Выделяем из БД объектов выбранной Категории
             ArrayList<CityPoint> listPoiSelect = new ArrayList<CityPoint>();
             ArrayList<String> listPoiSelectName = new ArrayList<String>();
@@ -47,23 +46,20 @@ public class Main {
 
             //Вывод в консоль строки поискового запроса
             System.out.print("\n" + "ВВЕДИТЕ СЛОВА ПОИСКА: ");
-
             Scanner in = new Scanner(System.in);
-            String num = in.next().toLowerCase();
+            String search = in.next().toLowerCase();
 
             ArrayList<CityPoint> listPoiSearch = new ArrayList<CityPoint>();
-
 
             //Поиск в объектах из БД текста содержащую поисковую строку
             for (int t = 0; t < listPoi.size(); t++) {
 
                 if (
-                        listPoi.get(t).getCategory().toLowerCase().contains(num) ||
-                                listPoi.get(t).getName().toLowerCase().contains(num) ||
-                                listPoi.get(t).getResponses().toLowerCase().contains(num) ||
-                                listPoi.get(t).getDescription().toLowerCase().contains(num)
+                        listPoi.get(t).getCategory().toLowerCase().contains(search) ||
+                                listPoi.get(t).getName().toLowerCase().contains(search) ||
+                                listPoi.get(t).getResponses().toLowerCase().contains(search) ||
+                                listPoi.get(t).getDescription().toLowerCase().contains(search)
                 ) {
-
                     listPoiSearch.add(listPoi.get(t));
                 }
             }
