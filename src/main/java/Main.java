@@ -8,19 +8,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-
-        ArrayList<CityPoint> listPoi = ReadBD.getListsPoi();
-
         //Читаем файл БД, ищем в нем Категории, добавляем пункт Поиск, выводим в консоль Категории и получаем из консоли номер выбранного пункта.
-
+        ArrayList<CityPoint> listPoi = ReadBD.getListsPoi();
         ArrayList<String> catrgorySearch = ReadBD.getlistCategorySearch();
 
-
-
         if (catrgorySearch != null){
-
             int nnn = new Consol().consolSelect(catrgorySearch);
-
 
         //____________________________________________________________________Если номер выбранного пункта не равен поисковому
         if (nnn != (ReadBD.getlistCategorySearch().size() - 1)) {
