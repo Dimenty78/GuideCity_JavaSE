@@ -77,7 +77,7 @@ public class Main {
                 ArrayList<String> listPoiSelectName = new ArrayList<String>();
 
                 for (int t = 0; t < listPoiSearch.size(); t++) {
-                    if (listPoiSearch.get(t).getCategory().toLowerCase().contains(ReadBD.getlistCategorySearch().get(nnn).toLowerCase())) {
+                    if (listPoiSearch.get(t).getCategory().toLowerCase().contains(ReadBD.getlistCategory(listPoiSearch).get(nnn).toLowerCase())) {
 
                         listPoiSelect.add(listPoiSearch.get(t));
                         listPoiSelectName.add(listPoiSearch.get(t).getName());

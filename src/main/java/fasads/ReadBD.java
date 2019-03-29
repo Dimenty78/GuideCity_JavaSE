@@ -12,7 +12,7 @@ public class ReadBD {
     private static ArrayList<CityPoint> rearToArray() {
 
         listsPoi.clear();
-        String bdText = new FileRecRead().ReadFile("BD_text.bd");
+        String bdText = new FileRead().ReadFile("BD_text.bd");
 
         if (bdText !=null) {
             String bdMass[] = bdText.split("\n");
