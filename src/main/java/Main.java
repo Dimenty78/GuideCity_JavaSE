@@ -15,6 +15,8 @@ public class Main {
         if (catrgorySearch != null){
             int nnn = new Consol().consolSelect(catrgorySearch);
 
+
+
         //____________________________________________________________________Если номер выбранного пункта не равен поисковому
         if (nnn != (ReadBD.getlistCategorySearch().size() - 1)) {
 
@@ -44,7 +46,7 @@ public class Main {
         } else {
 
             //Вывод в консоль строки поискового запроса
-            System.out.print("\n" + "ВВЕДИ СЛОВА ПОИСКА: ");
+            System.out.print("\n" + "ВВЕДИТЕ СЛОВА ПОИСКА: ");
 
             Scanner in = new Scanner(System.in);
             String num = in.next().toLowerCase();

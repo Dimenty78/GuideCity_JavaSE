@@ -16,7 +16,7 @@ public class Consol {
         int w = 1;
         while (w>0){
             System.out.println("");
-            System.out.print("Введи номер: ");
+            System.out.print("Введите номер: ");
 
             Scanner in = new Scanner(System.in);
             numString = in.next();
@@ -26,11 +26,11 @@ public class Consol {
                 if ( num < categorySize & num >=0){
                     w = 0;
                 }else {
-                    System.out.println("ВВЕДЕНО НЕКОРРЕКТНОЕ ЧИСЛО. ПОВТОРИ");
+                    System.out.println("ВВЕДЕНО НЕКОРРЕКТНОЕ ЧИСЛО. ПОВТОРИТЕ");
                 }
 
             }else {
-                System.out.println("ВЫ ВВЕЛИ НЕ ЧИСЛО. ПОВТОРИ");
+                System.out.println("ВЫ ВВЕЛИ НЕ ЧИСЛО. ПОВТОРИТЕ");
             }
         }
         return num;

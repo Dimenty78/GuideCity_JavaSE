@@ -63,6 +63,8 @@ public class CityPoint {
             return adres;
         }
 
+
+
         public void resultConsol(ArrayList<CityPoint> listPoiSelect, int nnn){
 
             //Выводем в консоль Характеристики выбранного объекта.
