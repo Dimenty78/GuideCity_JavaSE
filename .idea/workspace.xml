@@ -15,15 +15,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-34">
-              <caret line="16" column="76" lean-forward="true" selection-start-line="16" selection-start-column="76" selection-end-line="16" selection-end-column="76" />
+            <state relative-caret-position="136">
+              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#403#414#0" expanded="true" />
-                <element signature="e#481#489#0" expanded="true" />
-                <element signature="e#2155#2166#0" expanded="true" />
-                <element signature="e#2970#2981#0" expanded="true" />
-                <element signature="e#3048#3056#0" expanded="true" />
+                <element signature="e#445#456#0" expanded="true" />
+                <element signature="e#523#531#0" expanded="true" />
+                <element signature="e#2279#2290#0" expanded="true" />
+                <element signature="e#2941#2952#0" expanded="true" />
+                <element signature="e#3023#3031#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -32,12 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fasads/ReadBD.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#133#144#0" expanded="true" />
-                <element signature="e#213#221#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="493">
+              <caret line="29" column="71" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -46,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/fasads/CityPoint.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -54,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fasads/FileRecRead.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="340">
+              <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -78,10 +74,10 @@
         <option value="$PROJECT_DIR$/src/main/java/fasads/ReadFileToArray.java" />
         <option value="$PROJECT_DIR$/src/main/java/Consol.java" />
         <option value="$PROJECT_DIR$/BD_text.bd" />
-        <option value="$PROJECT_DIR$/src/main/java/fasads/ReadBD.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/fasads/FileRecRead.java" />
         <option value="$PROJECT_DIR$/src/main/java/fasads/CityPoint.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fasads/ReadBD.java" />
       </list>
     </option>
   </component>
@@ -103,45 +99,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="GuideCity2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GuideCity2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GuideCity2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GuideCity2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GuideCity2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GuideCity2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GuideCity2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GuideCity2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GuideCity2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GuideCity2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="fasads" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -165,18 +125,13 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="GuideCity2" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -188,11 +143,12 @@
       <workItem from="1553783064346" duration="1393000" />
       <workItem from="1553785430453" duration="4592000" />
       <workItem from="1553847070290" duration="16262000" />
+      <workItem from="1553865255715" duration="1247000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22247000" />
+    <option name="totallyTimeSpent" value="23494000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -206,14 +162,14 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.104477614" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10554371" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25757575" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.109307356" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -234,13 +190,7 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Test.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Consol.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4">
@@ -265,42 +215,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fasads/FileRecRead.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fasads/ReadBD.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="493">
+          <caret line="29" column="71" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fasads/CityPoint.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fasads/ReadBD.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fasads/FileRecRead.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#133#144#0" expanded="true" />
-            <element signature="e#213#221#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="340">
+          <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="16" column="76" lean-forward="true" selection-start-line="16" selection-start-column="76" selection-end-line="16" selection-end-column="76" />
+        <state relative-caret-position="136">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#403#414#0" expanded="true" />
-            <element signature="e#481#489#0" expanded="true" />
-            <element signature="e#2155#2166#0" expanded="true" />
-            <element signature="e#2970#2981#0" expanded="true" />
-            <element signature="e#3048#3056#0" expanded="true" />
+            <element signature="e#445#456#0" expanded="true" />
+            <element signature="e#523#531#0" expanded="true" />
+            <element signature="e#2279#2290#0" expanded="true" />
+            <element signature="e#2941#2952#0" expanded="true" />
+            <element signature="e#3023#3031#0" expanded="true" />
           </folding>
         </state>
       </provider>

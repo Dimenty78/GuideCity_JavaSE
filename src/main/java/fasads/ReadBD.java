@@ -7,6 +7,8 @@ public class ReadBD {
     private static ArrayList<CityPoint> listsPoi = new ArrayList<CityPoint>();
     private static ArrayList<String> listCategory = new ArrayList<String>();
 
+
+    //Создаем список объектов из БД
     private static ArrayList<CityPoint> rearToArray() {
 
         listsPoi.clear();
@@ -20,6 +22,7 @@ public class ReadBD {
             return listsPoi;
         }
 
+    //Создаем список Категорий с добавлением позиции ПОИСК
     private static ArrayList<String> listCategorySearch() {
         listCategory.clear();
         listsPoi = rearToArray();
@@ -33,6 +36,7 @@ public class ReadBD {
         return listCategory;
     }
 
+    //Создаем список Категорий без добавления позиции ПОИСК
     private static ArrayList<String> listCategory(ArrayList<CityPoint> listsPoi) {
         listCategory.clear();
         for (int t = 0; t < listsPoi.size(); t++) { ;
