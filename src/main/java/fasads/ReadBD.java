@@ -76,7 +76,7 @@ public class ReadBD {
         return listCategory;
     }
 
-    public static ArrayList<CityPoint> getListsPoit() {
+    public static ArrayList<CityPoint> getListsPoint() {
         ArrayList<CityPoint> listsPoi = readToArray();
         return listsPoi;
     }
@@ -86,8 +86,8 @@ public class ReadBD {
         return listCategory;
     }
 
-    public static ArrayList<String> getlistCategory(ArrayList<CityPoint> listsPoi) {
-        ArrayList<String> listCategory = listCategory(listsPoi);
+    public static ArrayList<String> getlistCategory(ArrayList<CityPoint> listsPoint) {
+        ArrayList<String> listCategory = listCategory(listsPoint);
         return listCategory;
     }
 }

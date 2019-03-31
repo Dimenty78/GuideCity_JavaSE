@@ -11,7 +11,7 @@ public class Main {
         //Читаем файл БД, ищем в нем Категории, добавляем пункт Поиск, выводим в консоль Категории и получаем из консоли номер выбранного пункта.
 
         //ReadBD readBD = new ReadBD();
-        ArrayList<CityPoint> listPoint = ReadBD.getListsPoit();
+        ArrayList<CityPoint> listPoint = ReadBD.getListsPoint();
         ArrayList<String> catrgorySearch = ReadBD.getlistCategorySearch();
 
         if (catrgorySearch != null) {
