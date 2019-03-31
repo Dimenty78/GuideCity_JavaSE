@@ -30,7 +30,7 @@ public class ReadBD {
                     if (bdMass[t].split(";;;;").length - 1 == 9) {
                         try {
                             Integer.parseInt(bdMass[t].split(";;;;")[3]);
-                            listPoint.add(new CityPoint(t, bdMass[t].split(";;;;")[0], bdMass[t].split(";;;;")[1], bdMass[t].split(";;;;")[2], Integer.parseInt(bdMass[t].split(";;;;")[3]), bdMass[t].split(";;;;")[4], bdMass[t].split(";;;;")[5], bdMass[t].split(";;;;")[6], bdMass[t].split(";;;;")[7], bdMass[t].split(";;;;")[8]));
+                            listPoint.add(new CityPoint(bdMass[t].split(";;;;")[0], bdMass[t].split(";;;;")[2], Integer.parseInt(bdMass[t].split(";;;;")[3]), bdMass[t].split(";;;;")[4], bdMass[t].split(";;;;")[5], bdMass[t].split(";;;;")[6], bdMass[t].split(";;;;")[7], bdMass[t].split(";;;;")[8]));
                         } catch (NumberFormatException e) {
                         }
                     }

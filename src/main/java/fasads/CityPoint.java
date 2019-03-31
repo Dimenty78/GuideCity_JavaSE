@@ -14,12 +14,10 @@ public class CityPoint {
     private String adres;
 
     public CityPoint() {
-
     }
 
-    ;
 
-    public CityPoint(int id, String category, String favorites, String name, int rating, String description, String responses, String worktim, String telefon, String adres) {
+    public CityPoint(String category, String name, int rating, String description, String responses, String worktim, String telefon, String adres) {
         this.category = category;
         this.name = name;
         this.rating = rating;
