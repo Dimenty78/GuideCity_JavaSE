@@ -7,7 +7,6 @@ public class Consol {
     private static String numString;
 
     public int consolSelect(ArrayList<String> list) {
-
         int categorySize = list.size();
         for (int t = 0; t < list.size(); t++) {
             System.out.println(t + " - " + list.get(t));
@@ -16,11 +15,9 @@ public class Consol {
         while (w > 0) {
             System.out.println("");
             System.out.print("Введите номер: ");
-
             Scanner in = new Scanner(System.in);
             numString = in.next();
             if (isDigit(numString) == true) {
-
                 num = Integer.parseInt(numString);
                 if (num < categorySize & num >= 0) {
                     w = 0;

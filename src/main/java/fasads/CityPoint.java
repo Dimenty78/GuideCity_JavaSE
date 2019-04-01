@@ -16,7 +16,6 @@ public class CityPoint {
     public CityPoint() {
     }
 
-
     public CityPoint(String category, String name, int rating, String description, String responses, String worktim, String telefon, String adres) {
         this.category = category;
         this.name = name;
@@ -27,7 +26,6 @@ public class CityPoint {
         this.telefon = telefon;
         this.adres = adres;
     }
-
 
     public String getCategory() {
         return category;
@@ -61,9 +59,7 @@ public class CityPoint {
         return adres;
     }
 
-
     public void resultConsol(ArrayList<CityPoint> listPointSelect, int numberConsolSelect) {
-
         //Выводем в консоль Характеристики выбранного объекта.
         System.out.println("\n" + "\n" + "-----------------------------------------------------------------");
         System.out.println("Название: " + listPointSelect.get(numberConsolSelect).getName());
@@ -75,7 +71,6 @@ public class CityPoint {
         System.out.println("Отзывы: ");
 
         String bdMass[] = listPointSelect.get(numberConsolSelect).getResponses().split("::::");
-
         for (int t = 0; t < bdMass.length; t++) {
             System.out.println(bdMass[t]);
         }

@@ -10,13 +10,15 @@ public class Main {
 
         //Читаем файл БД, ищем в нем Категории, добавляем пункт Поиск, выводим в консоль Категории и получаем из консоли номер выбранного пункта.
 
-        //ReadBD readBD = new ReadBD();
+        //ReadBD.mysqlBDStop();
+        ReadBD.mysqlBDStart();
+
+
         ArrayList<CityPoint> listPoint = ReadBD.getListsPoint();
         ArrayList<String> catrgorySearch = ReadBD.getlistCategorySearch();
 
         if (catrgorySearch != null) {
             int numberConsolSelect = new Consol().consolSelect(catrgorySearch);
-
 
             //____________________________________________________________________Если номер выбранного пункта не равен поисковому
             if (numberConsolSelect != (ReadBD.getlistCategorySearch().size() - 1)) {
@@ -45,7 +47,7 @@ public class Main {
             } else {
 
                 //Вывод в консоль строки поискового запроса
-                System.out.print("\n" + "ВВЕДИТЕ СЛОВА ПОИСКА: ");
+                System.out.print("\n" + "ВВЕДИТЕ СЛОВО ПОИСКА: ");
                 Scanner in = new Scanner(System.in);
                 String search = in.next().toLowerCase();
 
@@ -86,6 +88,8 @@ public class Main {
                     //Вывод на консоль результата
                     CityPoint cityPoint = new CityPoint();
                     cityPoint.resultConsol(listPointSelect, numberConsolSelect);
+
+
 
                 } else {
                     System.out.println("\n" + "Поиск не дал результатов");
